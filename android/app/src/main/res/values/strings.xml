@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">پلاک‌خوان</string>
+    <string name="credit" translatable="false">© Mehrdad Rahmani · mehrdad.rahmani100@gmail.com</string>
+    <string name="tagline">خواندن هوشمند پلاک خودرو؛ سریع، دقیق و کاملاً آفلاین</string>
+
+    <!-- navigation -->
+    <string name="nav_scan">اسکن</string>
+    <string name="nav_history">تاریخچه</string>
+    <string name="nav_settings">تنظیمات</string>
+
+    <!-- intro -->
+    <string name="intro_title">به پلاک‌خوان خوش آمدید</string>
+    <string name="intro_f1_t">تشخیص در یک لحظه</string>
+    <string name="intro_f1_d">دوربین را به سمت خودرو بگیرید؛ پلاک پیدا و خوانده می‌شود.</string>
+    <string name="intro_f2_t">اسکن زنده</string>
+    <string name="intro_f2_d">در حالت زنده، پلاک خودروهای در حال عبور هم ثبت می‌شوند.</string>
+    <string name="intro_f3_t">حریم خصوصی کامل</string>
+    <string name="intro_f3_d">همه پردازش‌ها روی خود گوشی انجام می‌شود و هیچ تصویری ارسال نمی‌شود.</string>
+    <string name="intro_start">شروع</string>
+
+    <!-- scan -->
+    <string name="scan_hint">پلاک را داخل کادر قرار دهید</string>
+    <string name="scan_live_hint">اسکن زنده فعال است؛ دوربین را آرام حرکت دهید</string>
+    <string name="live">اسکن زنده</string>
+    <string name="loading_models">در حال آماده‌سازی…</string>
+    <string name="processing">در حال خواندن پلاک…</string>
+    <string name="no_plate">پلاکی پیدا نشد</string>
+    <string name="no_plate_hint">از فاصله نزدیک‌تر، روبه‌روی پلاک و با نور کافی دوباره امتحان کنید.</string>
+    <string name="camera_denied">برای اسکن با دوربین، اجازه دسترسی لازم است. همچنان می‌توانید از گالری استفاده کنید.</string>
+    <string name="grant">اجازه دادن</string>
+    <string name="gallery">گالری</string>
+    <string name="flash">فلاش</string>
+    <string name="capture">عکس گرفتن</string>
+    <string name="live_found">%1$s پلاک ثبت شد</string>
+
+    <!-- result -->
+    <string name="result_title">نتیجه خوانش</string>
+    <string name="result_count">%1$s پلاک پیدا شد</string>
+    <string name="copy">کپی</string>
+    <string name="share">اشتراک‌گذاری</string>
+    <string name="copied">شماره پلاک کپی شد</string>
+    <string name="saved">در تاریخچه ذخیره شد</string>
+    <string name="uncertain">تصویر واضح نیست؛ پلاک را با تصویر مقایسه کنید</string>
+    <string name="timing">%1$s میلی‌ثانیه</string>
+    <string name="share_text">پلاک: %1$s\n(پلاک‌خوان · Mehrdad Rahmani)</string>
+
+    <!-- history -->
+    <string name="history_title">تاریخچه</string>
+    <string name="history_empty_t">هنوز پلاکی ثبت نشده</string>
+    <string name="history_empty_d">پلاک‌هایی که می‌خوانید اینجا با تاریخ و ساعت ذخیره می‌شوند.</string>
+    <string name="search_hint">جستجوی شماره پلاک…</string>
+    <string name="export_csv">خروجی CSV</string>
+    <string name="clear_all">پاک کردن همه</string>
+    <string name="clear_confirm">همه موارد تاریخچه پاک شود؟</string>
+    <string name="cancel">انصراف</string>
+    <string name="delete">حذف</string>
+    <string name="history_count">%1$s مورد</string>
+
+    <!-- settings -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="s_scan">اسکن</string>
+    <string name="s_sensitivity">حساسیت تشخیص</string>
+    <string name="s_sensitivity_d">بیشتر: پلاک‌های دور و کوچک هم پیدا می‌شوند (احتمال خطا بیشتر)</string>
+    <string name="s_autosave">ذخیره خودکار در تاریخچه</string>
+    <string name="s_vibrate">لرزش هنگام ثبت پلاک</string>
+    <string name="s_about">درباره</string>
+    <string name="s_privacy_t">حریم خصوصی</string>
+    <string name="s_privacy_d">پلاک‌خوان هیچ داده‌ای را از گوشی خارج نمی‌کند؛ تشخیص و خوانش کاملاً آفلاین است.</string>
+    <string name="s_models_t">هوش مصنوعی روی گوشی</string>
+    <string name="s_models_d">پیدا کردن و خواندن پلاک با شبکه‌های عصبی اختصاصی، بدون نیاز به اینترنت</string>
+    <string name="s_speed_t">سریع</string>
+    <string name="s_speed_d">هر عکس در کسری از ثانیه خوانده می‌شود</string>
+    <string name="s_version">نسخه %1$s</string>
+    <string name="low">کم</string>
+    <string name="high">زیاد</string>
+    <string name="error">خطا: %1$s</string>
+</resources>

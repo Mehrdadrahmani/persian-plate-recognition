@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PlateReader" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">@color/surface_variant</item>
+        <item name="colorOnPrimaryContainer">@color/on_surface</item>
+        <item name="colorSecondary">@color/brand_amber</item>
+        <item name="colorSecondaryContainer">@color/brand_container</item>
+        <item name="colorOnSecondaryContainer">@color/brand_on_container</item>
+        <item name="colorTertiaryContainer">@color/brand_container</item>
+        <item name="colorOnSecondary">#1B1300</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_muted</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">@bool/light_bars</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.PlateReader.BottomSheet</item>
+        <item name="materialButtonStyle">@style/Widget.PlateReader.Button</item>
+    </style>
+
+    <style name="Theme.PlateReader.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/brand_navy</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.PlateReader</item>
+    </style>
+
+    <style name="ThemeOverlay.PlateReader.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.PlateReader.BottomSheet</item>
+    </style>
+
+    <style name="Widget.PlateReader.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="shapeAppearance">@style/Shape.PlateReader.Sheet</item>
+    </style>
+
+    <style name="Shape.PlateReader.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">28dp</item>
+        <item name="cornerSizeTopRight">28dp</item>
+    </style>
+
+    <style name="Widget.PlateReader.Button" parent="Widget.Material3.Button">
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <!-- typography -->
+    <style name="Text.Display" parent="">
+        <item name="android:fontFamily">@font/vazirmatn_black</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="Text.Title" parent="">
+        <item name="android:fontFamily">@font/vazirmatn_extrabold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="Text.Subtitle" parent="">
+        <item name="android:fontFamily">@font/vazirmatn_semibold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="Text.Body" parent="">
+        <item name="android:fontFamily">@font/vazirmatn_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/on_surface_muted</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+    </style>
+    <style name="Text.Caption" parent="">
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/on_surface_muted</item>
+    </style>
+    <style name="Shape.Rounded16" parent=""><item name="cornerFamily">rounded</item><item name="cornerSize">16dp</item></style>
+    <style name="Shape.Rounded10" parent=""><item name="cornerFamily">rounded</item><item name="cornerSize">10dp</item></style>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- brand -->
+    <color name="brand_navy">#14306B</color>
+    <color name="brand_navy_dark">#0B1D45</color>
+    <color name="brand_blue">#2F5BD3</color>
+    <color name="brand_amber">#FFB300</color>
+    <color name="plate_blue">#1D4EA3</color>
+    <!-- surfaces (light) -->
+    <color name="bg">#F4F6FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#E9EEF8</color>
+    <color name="on_surface">#141A2A</color>
+    <color name="on_surface_muted">#5B6478</color>
+    <color name="outline">#D5DCEA</color>
+    <!-- confidence -->
+    <color name="conf_high">#1E9E5A</color>
+    <color name="conf_mid">#E39B00</color>
+    <color name="conf_low">#D93B3B</color>
+    <color name="scrim">#99000000</color>
+    <color name="brand_container">#DCE6FF</color>
+    <color name="brand_on_container">#14306B</color>
+    <color name="ic_launcher_background">#14306B</color>
+</resources>

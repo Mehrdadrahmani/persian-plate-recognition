@@ -1,0 +1,139 @@
+2026-09-26 06:51:09  ===== run started: platform=kaggle  smoke_test=False  device=cuda  gpus=2  yolo_train_device=[0, 1]
+2026-09-26 06:54:15  LPD split: 5917 vehicle groups over 6252 images; {'train': '4376 (70.0%)', 'val': '938 (15.0%)', 'test': '938 (15.0%)'}
+2026-09-26 07:53:57  LPD training done, best weights: /kaggle/working/runs/lpd/yolo26n_full/weights/best.pt
+2026-09-26 07:53:58  model 1/3 saved to /kaggle/working/models/1_lpd_yolo26n
+2026-09-26 07:54:47  LPD metrics: {'val': {'precision': 0.9549, 'recall': 0.9499, 'mAP50': 0.9846, 'mAP50-95': 0.7837, 'fitness': 0.7837}, 'test': {'precision': 0.9569, 'recall': 0.9761, 'mAP50': 0.988, 'mAP50-95': 0.785, 'fitness': 0.785}} | recommended conf 0.618
+2026-09-26 07:55:22  LPD test @ conf 0.618: 1041/1091 plates detected (recall 0.9542), 40 false boxes, 73/938 images with at least one error
+2026-09-26 07:56:03  LPR split: {'train': 18671, 'test': 3550, 'val': 2340} {'train': 0.76, 'test': 0.145, 'val': 0.095}
+2026-09-26 07:57:17  [scratch_full] ep   1/40 | loss 2.4403/2.2815 | char 0.1347/0.1399 | plate 0.0000/0.0000 | lr 2.09e-04 | 51s  *best*
+2026-09-26 07:58:07  [scratch_full] ep   2/40 | loss 2.4120/2.2718 | char 0.1420/0.1372 | plate 0.0000/0.0000 | lr 5.61e-04 | 50s
+2026-09-26 07:58:57  [scratch_full] ep   3/40 | loss 2.4020/2.2641 | char 0.1465/0.1464 | plate 0.0000/0.0000 | lr 1.04e-03 | 50s
+2026-09-26 07:59:46  [scratch_full] ep   4/40 | loss 2.3447/1.9699 | char 0.1866/0.2886 | plate 0.0000/0.0000 | lr 1.52e-03 | 49s
+2026-09-26 08:00:37  [scratch_full] ep   5/40 | loss 1.9091/1.1684 | char 0.3793/0.6142 | plate 0.0023/0.0432 | lr 1.87e-03 | 50s  *best*
+2026-09-26 08:01:27  [scratch_full] ep   6/40 | loss 1.2918/0.5692 | char 0.6671/0.8459 | plate 0.0994/0.4205 | lr 2.00e-03 | 50s  *best*
+2026-09-26 08:02:18  [scratch_full] ep   7/40 | loss 0.9347/0.3017 | char 0.8331/0.9366 | plate 0.3867/0.7256 | lr 2.00e-03 | 50s  *best*
+2026-09-26 08:03:08  [scratch_full] ep   8/40 | loss 0.7802/0.2316 | char 0.8986/0.9528 | plate 0.5735/0.7769 | lr 1.98e-03 | 50s  *best*
+2026-09-26 08:03:58  [scratch_full] ep   9/40 | loss 0.7042/0.1964 | char 0.9282/0.9655 | plate 0.6774/0.8491 | lr 1.96e-03 | 50s  *best*
+2026-09-26 08:04:49  [scratch_full] ep  10/40 | loss 0.6647/0.1893 | char 0.9441/0.9697 | plate 0.7470/0.8684 | lr 1.93e-03 | 50s  *best*
+2026-09-26 08:05:39  [scratch_full] ep  11/40 | loss 0.6339/0.1840 | char 0.9542/0.9700 | plate 0.7908/0.8615 | lr 1.89e-03 | 50s
+2026-09-26 08:06:30  [scratch_full] ep  12/40 | loss 0.6145/0.1554 | char 0.9605/0.9761 | plate 0.8134/0.8893 | lr 1.85e-03 | 50s  *best*
+2026-09-26 08:07:19  [scratch_full] ep  13/40 | loss 0.5994/0.1559 | char 0.9640/0.9776 | plate 0.8284/0.8974 | lr 1.80e-03 | 50s  *best*
+2026-09-26 08:08:10  [scratch_full] ep  14/40 | loss 0.5844/0.1532 | char 0.9689/0.9765 | plate 0.8490/0.8880 | lr 1.74e-03 | 50s
+2026-09-26 08:09:00  [scratch_full] ep  15/40 | loss 0.5773/0.1400 | char 0.9705/0.9799 | plate 0.8540/0.9051 | lr 1.67e-03 | 50s  *best*
+2026-09-26 08:09:50  [scratch_full] ep  16/40 | loss 0.5696/0.1415 | char 0.9726/0.9809 | plate 0.8632/0.9128 | lr 1.60e-03 | 50s  *best*
+2026-09-26 08:10:40  [scratch_full] ep  17/40 | loss 0.5608/0.1440 | char 0.9750/0.9807 | plate 0.8730/0.9103 | lr 1.53e-03 | 49s
+2026-09-26 08:11:30  [scratch_full] ep  18/40 | loss 0.5533/0.1368 | char 0.9767/0.9816 | plate 0.8810/0.9090 | lr 1.45e-03 | 50s
+2026-09-26 08:12:20  [scratch_full] ep  19/40 | loss 0.5482/0.1348 | char 0.9779/0.9824 | plate 0.8848/0.9145 | lr 1.36e-03 | 50s  *best*
+2026-09-26 08:13:10  [scratch_full] ep  20/40 | loss 0.5425/0.1329 | char 0.9795/0.9827 | plate 0.8934/0.9171 | lr 1.27e-03 | 50s  *best*
+2026-09-26 08:13:59  [scratch_full] ep  21/40 | loss 0.5397/0.1342 | char 0.9798/0.9824 | plate 0.8963/0.9179 | lr 1.18e-03 | 49s  *best*
+2026-09-26 08:14:49  [scratch_full] ep  22/40 | loss 0.5342/0.1318 | char 0.9812/0.9837 | plate 0.8995/0.9222 | lr 1.09e-03 | 50s  *best*
+2026-09-26 08:15:39  [scratch_full] ep  23/40 | loss 0.5275/0.1306 | char 0.9835/0.9839 | plate 0.9098/0.9175 | lr 9.99e-04 | 49s
+2026-09-26 08:16:29  [scratch_full] ep  24/40 | loss 0.5250/0.1279 | char 0.9834/0.9839 | plate 0.9089/0.9205 | lr 9.07e-04 | 50s
+2026-09-26 08:17:19  [scratch_full] ep  25/40 | loss 0.5211/0.1315 | char 0.9843/0.9841 | plate 0.9153/0.9235 | lr 8.16e-04 | 50s  *best*
+2026-09-26 08:18:09  [scratch_full] ep  26/40 | loss 0.5172/0.1285 | char 0.9858/0.9849 | plate 0.9221/0.9274 | lr 7.26e-04 | 50s  *best*
+2026-09-26 08:18:59  [scratch_full] ep  27/40 | loss 0.5138/0.1281 | char 0.9861/0.9848 | plate 0.9216/0.9265 | lr 6.38e-04 | 50s
+2026-09-26 08:19:49  [scratch_full] ep  28/40 | loss 0.5106/0.1293 | char 0.9869/0.9834 | plate 0.9262/0.9192 | lr 5.54e-04 | 50s
+2026-09-26 08:20:39  [scratch_full] ep  29/40 | loss 0.5103/0.1275 | char 0.9869/0.9853 | plate 0.9252/0.9278 | lr 4.73e-04 | 49s  *best*
+2026-09-26 08:21:29  [scratch_full] ep  30/40 | loss 0.5062/0.1253 | char 0.9883/0.9854 | plate 0.9330/0.9261 | lr 3.97e-04 | 50s
+2026-09-26 08:22:19  [scratch_full] ep  31/40 | loss 0.5049/0.1277 | char 0.9886/0.9853 | plate 0.9354/0.9291 | lr 3.26e-04 | 50s  *best*
+2026-09-26 08:23:09  [scratch_full] ep  32/40 | loss 0.5019/0.1243 | char 0.9892/0.9856 | plate 0.9379/0.9295 | lr 2.61e-04 | 50s  *best*
+2026-09-26 08:23:59  [scratch_full] ep  33/40 | loss 0.5001/0.1255 | char 0.9899/0.9857 | plate 0.9407/0.9299 | lr 2.02e-04 | 50s  *best*
+2026-09-26 08:24:49  [scratch_full] ep  34/40 | loss 0.4986/0.1257 | char 0.9902/0.9851 | plate 0.9419/0.9274 | lr 1.49e-04 | 50s
+2026-09-26 08:25:40  [scratch_full] ep  35/40 | loss 0.4980/0.1250 | char 0.9902/0.9856 | plate 0.9425/0.9308 | lr 1.05e-04 | 50s  *best*
+2026-09-26 08:26:30  [scratch_full] ep  36/40 | loss 0.4959/0.1255 | char 0.9906/0.9853 | plate 0.9440/0.9278 | lr 6.73e-05 | 50s
+2026-09-26 08:27:20  [scratch_full] ep  37/40 | loss 0.4955/0.1249 | char 0.9910/0.9855 | plate 0.9457/0.9299 | lr 3.80e-05 | 50s
+2026-09-26 08:28:10  [scratch_full] ep  38/40 | loss 0.4959/0.1248 | char 0.9911/0.9857 | plate 0.9474/0.9312 | lr 1.69e-05 | 50s  *best*
+2026-09-26 08:29:00  [scratch_full] ep  39/40 | loss 0.4951/0.1250 | char 0.9911/0.9856 | plate 0.9478/0.9308 | lr 4.22e-06 | 50s
+2026-09-26 08:29:51  [scratch_full] ep  40/40 | loss 0.4945/0.1248 | char 0.9911/0.9858 | plate 0.9464/0.9316 | lr 8.20e-09 | 50s  *best*
+2026-09-26 08:29:51  [scratch_full] best val plate acc 0.9316 at epoch 40
+2026-09-26 08:29:53  model 2/3 (scratch) saved to /kaggle/working/models/2_lpr_scratch
+2026-09-26 08:29:56  --- gradient health: scratch (580 logged steps)
+2026-09-26 08:29:56    global norm: median 0.259, p99 1.07, max 1.69, min 0.0863; non-finite 0 (AMP overflow steps are skipped by GradScaler); clipped 0.0%
+2026-09-26 08:29:56    per-layer median grad norm: {'stem.0.weight': '1.59e-01', 'stages.1.1.conv2.weight': '1.12e-02', 'stages.3.1.conv2.weight': '8.16e-03', 'head.fc.weight': '3.86e-02', 'head.letter_head.weight': '6.27e-02'}
+2026-09-26 08:29:56    smallest/largest layer ratio 5.1e-02 -> OK
+2026-09-26 08:29:56    mean zero-activation fraction: {'stem.2': '0.43', 'stages.1.1.relu2': '0.45', 'stages.3.1.relu2': '0.51', 'head.reduce.2': '0.77', 'head.act': '0.49'} -> OK
+2026-09-26 08:29:56    letter predictions with softmax > 0.99 (last 20% of steps): 0.0%
+2026-09-26 08:29:56    verdict: no exploding gradients
+2026-09-26 08:30:54  [pretrained_stage1_full] ep   1/3 | loss 2.3776/1.9946 | char 0.1773/0.2934 | plate 0.0000/0.0000 | lr 8.87e-04 | 51s  *best*
+2026-09-26 08:31:39  [pretrained_stage1_full] ep   2/3 | loss 2.1178/1.7781 | char 0.3058/0.3785 | plate 0.0002/0.0009 | lr 3.30e-04 | 45s  *best*
+2026-09-26 08:32:25  [pretrained_stage1_full] ep   3/3 | loss 2.0287/1.7337 | char 0.3480/0.3962 | plate 0.0004/0.0009 | lr 2.20e-08 | 46s
+2026-09-26 08:32:25  [pretrained_stage1_full] best val plate acc 0.0009 at epoch 2
+2026-09-26 08:33:18  [pretrained_stage2_full] ep   1/25 | loss 2.3461/1.8594 | char 0.2013/0.3452 | plate 0.0000/0.0000 | lr 5.98e-05 | 52s  *best*
+2026-09-26 08:34:06  [pretrained_stage2_full] ep   2/25 | loss 2.0127/1.5153 | char 0.3551/0.4834 | plate 0.0004/0.0051 | lr 1.71e-04 | 47s  *best*
+2026-09-26 08:34:53  [pretrained_stage2_full] ep   3/25 | loss 1.6291/1.0355 | char 0.5263/0.6693 | plate 0.0109/0.0470 | lr 2.73e-04 | 47s  *best*
+2026-09-26 08:35:40  [pretrained_stage2_full] ep   4/25 | loss 1.2992/0.7488 | char 0.6635/0.7682 | plate 0.0634/0.1752 | lr 3.00e-04 | 47s  *best*
+2026-09-26 08:36:28  [pretrained_stage2_full] ep   5/25 | loss 1.0864/0.5330 | char 0.7563/0.8533 | plate 0.1685/0.4009 | lr 2.97e-04 | 47s  *best*
+2026-09-26 08:37:15  [pretrained_stage2_full] ep   6/25 | loss 0.9439/0.3973 | char 0.8246/0.9008 | plate 0.3253/0.5761 | lr 2.92e-04 | 47s  *best*
+2026-09-26 08:38:02  [pretrained_stage2_full] ep   7/25 | loss 0.8497/0.3329 | char 0.8666/0.9206 | plate 0.4478/0.6585 | lr 2.83e-04 | 47s  *best*
+2026-09-26 08:38:49  [pretrained_stage2_full] ep   8/25 | loss 0.7920/0.2820 | char 0.8895/0.9364 | plate 0.5315/0.7265 | lr 2.71e-04 | 47s  *best*
+2026-09-26 08:39:37  [pretrained_stage2_full] ep   9/25 | loss 0.7488/0.2723 | char 0.9080/0.9391 | plate 0.5995/0.7432 | lr 2.57e-04 | 47s  *best*
+2026-09-26 08:40:24  [pretrained_stage2_full] ep  10/25 | loss 0.7210/0.2344 | char 0.9184/0.9486 | plate 0.6360/0.7769 | lr 2.40e-04 | 47s  *best*
+2026-09-26 08:41:11  [pretrained_stage2_full] ep  11/25 | loss 0.6960/0.2217 | char 0.9278/0.9533 | plate 0.6747/0.7902 | lr 2.22e-04 | 47s  *best*
+2026-09-26 08:41:59  [pretrained_stage2_full] ep  12/25 | loss 0.6769/0.2172 | char 0.9346/0.9554 | plate 0.7023/0.8047 | lr 2.01e-04 | 47s  *best*
+2026-09-26 08:42:46  [pretrained_stage2_full] ep  13/25 | loss 0.6620/0.2061 | char 0.9395/0.9583 | plate 0.7189/0.8167 | lr 1.80e-04 | 47s  *best*
+2026-09-26 08:43:34  [pretrained_stage2_full] ep  14/25 | loss 0.6505/0.1981 | char 0.9442/0.9606 | plate 0.7388/0.8278 | lr 1.58e-04 | 48s  *best*
+2026-09-26 08:44:22  [pretrained_stage2_full] ep  15/25 | loss 0.6372/0.1931 | char 0.9480/0.9613 | plate 0.7554/0.8303 | lr 1.36e-04 | 48s  *best*
+2026-09-26 08:45:11  [pretrained_stage2_full] ep  16/25 | loss 0.6288/0.1874 | char 0.9509/0.9629 | plate 0.7693/0.8380 | lr 1.14e-04 | 49s  *best*
+2026-09-26 08:45:59  [pretrained_stage2_full] ep  17/25 | loss 0.6212/0.1866 | char 0.9537/0.9632 | plate 0.7768/0.8372 | lr 9.31e-05 | 48s
+2026-09-26 08:46:48  [pretrained_stage2_full] ep  18/25 | loss 0.6133/0.1841 | char 0.9560/0.9636 | plate 0.7866/0.8415 | lr 7.33e-05 | 48s  *best*
+2026-09-26 08:47:35  [pretrained_stage2_full] ep  19/25 | loss 0.6097/0.1766 | char 0.9574/0.9662 | plate 0.7901/0.8479 | lr 5.51e-05 | 48s  *best*
+2026-09-26 08:48:23  [pretrained_stage2_full] ep  20/25 | loss 0.6035/0.1770 | char 0.9591/0.9658 | plate 0.7955/0.8474 | lr 3.90e-05 | 48s
+2026-09-26 08:49:11  [pretrained_stage2_full] ep  21/25 | loss 0.5999/0.1759 | char 0.9611/0.9666 | plate 0.8054/0.8504 | lr 2.54e-05 | 48s  *best*
+2026-09-26 08:49:59  [pretrained_stage2_full] ep  22/25 | loss 0.5990/0.1747 | char 0.9605/0.9669 | plate 0.8019/0.8551 | lr 1.44e-05 | 48s  *best*
+2026-09-26 08:50:47  [pretrained_stage2_full] ep  23/25 | loss 0.5961/0.1730 | char 0.9617/0.9672 | plate 0.8065/0.8547 | lr 6.47e-06 | 48s
+2026-09-26 08:51:36  [pretrained_stage2_full] ep  24/25 | loss 0.5952/0.1733 | char 0.9623/0.9674 | plate 0.8094/0.8581 | lr 1.62e-06 | 49s  *best*
+2026-09-26 08:52:25  [pretrained_stage2_full] ep  25/25 | loss 0.5940/0.1733 | char 0.9622/0.9670 | plate 0.8080/0.8556 | lr 1.28e-09 | 49s
+2026-09-26 08:52:25  [pretrained_stage2_full] best val plate acc 0.8581 at epoch 24
+2026-09-26 08:52:28  model 3/3 (pretrained) saved to /kaggle/working/models/3_lpr_pretrained
+2026-09-26 08:52:31  --- gradient health: pretrained (407 logged steps)
+2026-09-26 08:52:31    global norm: median 0.614, p99 1.87, max 2.49, min 0.366; non-finite 0 (AMP overflow steps are skipped by GradScaler); clipped 0.0%
+2026-09-26 08:52:31    per-layer median grad norm: {'features.0.0.weight': '8.94e-02', 'features.9.block.1.0.weight': '3.10e-02', 'features.16.0.weight': '1.06e-01', 'head.fc.weight': '1.27e-01', 'head.letter_head.weight': '1.25e-01'}
+2026-09-26 08:52:31    smallest/largest layer ratio 2.5e-01 -> OK
+2026-09-26 08:52:31    mean zero-activation fraction: {'features.1.block.0.2': '0.16', 'features.5.block.1.2': '0.50', 'features.15.block.2.activation': '0.52', 'head.reduce.2': '0.56', 'head.act': '0.46'} -> OK
+2026-09-26 08:52:31    letter predictions with softmax > 0.99 (last 20% of steps): 0.0%
+2026-09-26 08:52:31    verdict: no exploding gradients
+2026-09-26 08:52:38  
+=== LPR scratch test: plate acc 0.9417 | char acc 0.9890 | loss 0.1112 | macro F1 digits 0.9895 letter 0.8942
+2026-09-26 08:52:47  
+=== LPR pretrained test: plate acc 0.8637 | char acc 0.9699 | loss 0.1617 | macro F1 digits 0.9706 letter 0.8922
+2026-09-26 08:55:56  LPR comparison:
+model                     scratch    pretrained
+test_plate_acc       9.416901e-01  8.636619e-01
+test_char_acc        9.889789e-01  9.698592e-01
+test_letter_acc      9.876056e-01  9.749296e-01
+digit_macro_f1       9.894523e-01  9.705608e-01
+letter_macro_f1      8.942438e-01  8.921976e-01
+test_loss            1.111647e-01  1.617389e-01
+params_total         7.397244e+06  4.315532e+06
+params_trainable     7.397244e+06  4.315532e+06
+size_MB              2.828919e+01  1.665249e+01
+cuda_ms_per_image    3.379404e+00  7.315426e+00
+cuda_ms_per_batch64  5.726772e+01  1.511867e+01
+cpu_ms_per_image     3.075180e+01  1.499919e+01
+cpu_ms_per_batch64   2.437214e+03  3.500039e+02
+2026-09-26 08:55:56  best model: scratch (highest test full-plate accuracy, ties broken by cuda_ms_per_image)
+2026-09-26 08:56:48  detector metrics per split:
+       images  precision  recall   mAP50  mAP50-95  fitness
+split                                                      
+train    4376     0.9688  0.9796  0.9916    0.8203   0.8203
+val       938     0.9549  0.9499  0.9846    0.7837   0.7837
+test      938     0.9569  0.9761  0.9880    0.7850   0.7850
+2026-09-26 08:57:34  recognizer metrics per split:
+                  samples  plate_acc  char_acc  letter_acc  digit_macro_f1  letter_macro_f1    loss
+model      split                                                                                   
+scratch    train    18671     0.9806    0.9966      0.9971          0.9965           0.9719  0.0774
+           val       2340     0.9316    0.9858      0.9889          0.9859           0.9254  0.1248
+           test      3550     0.9417    0.9890      0.9876          0.9895           0.8942  0.1112
+pretrained train    18671     0.9220    0.9861      0.9886          0.9862           0.9612  0.1116
+           val       2340     0.8581    0.9674      0.9722          0.9683           0.8416  0.1733
+           test      3550     0.8637    0.9699      0.9749          0.9706           0.8922  0.1617
+2026-09-26 08:57:35  detector mAP50: train 0.9916 | val 0.9846 | test 0.9880 -> generalizes well (train-test gap +0.4%)
+2026-09-26 08:57:35  scratch full-plate accuracy: train 0.9806 | val 0.9316 | test 0.9417 -> generalizes well (train-test gap +3.9%)
+2026-09-26 08:57:35  pretrained full-plate accuracy: train 0.9220 | val 0.8581 | test 0.8637 -> possible OVERFITTING (train is 5.8% above test)
+2026-09-26 08:57:45  /kaggle/working/lpd_lpr_artifacts.zip  (100.0 MB, 17 files + 87 result files)
+2026-09-26 08:57:49  lpr_best.onnx exported (onnxruntime not installed, not cross-checked)
+2026-09-26 08:57:53  lpd_best.onnx exported
+2026-09-26 08:58:01  /kaggle/working/lpd_lpr_artifacts.zip  (134.4 MB, 22 files + 87 result files)
+2026-09-26 08:58:15  plate_reader.py (full images) exit 0
+2026-09-26 08:58:19  plate_reader.py (crops) exit 0
+2026-09-26 08:58:22  ===== run finished

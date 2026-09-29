@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:layoutDirection="rtl" android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:background="@drawable/bg_hero" android:gravity="center" android:orientation="vertical" android:padding="28dp">
+        <ImageView android:layout_width="140dp" android:layout_height="140dp"
+            android:importantForAccessibility="no" android:src="@drawable/ic_launcher_foreground" />
+        <TextView style="@style/Text.Display" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/app_name" android:textColor="#FFFFFF" android:textSize="38sp" />
+        <TextView style="@style/Text.Body" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:gravity="center" android:text="@string/tagline" android:textColor="#D6E0FF" android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingTop="24dp" android:paddingBottom="12dp">
+        <TextView style="@style/Text.Title" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" android:text="@string/intro_title" />
+        <include android:id="@+id/f1" layout="@layout/row_feature" />
+        <include android:id="@+id/f2" layout="@layout/row_feature" />
+        <include android:id="@+id/f3" layout="@layout/row_feature" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/start"
+            android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginTop="18dp"
+            android:text="@string/intro_start" android:textSize="17sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:gravity="center" android:text="@string/credit" android:textColor="@color/on_surface_muted"
+            android:textDirection="ltr" android:textSize="10sp" android:alpha="0.8" />
+    </LinearLayout>
+</LinearLayout>

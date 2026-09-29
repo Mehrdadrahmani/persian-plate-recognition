@@ -1,0 +1,5 @@
+PySide6-Essentials>=6.8
+onnxruntime>=1.18
+opencv-python-headless>=4.9
+numpy>=1.26
+pillow>=10.0

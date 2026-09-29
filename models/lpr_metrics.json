@@ -1,0 +1,80 @@
+{
+  "smoke_test": false,
+  "best_model": "scratch",
+  "selection": "max test_plate_acc, tie-break min latency",
+  "n_samples": {
+    "train": 18671,
+    "val": 2340,
+    "test": 3550
+  },
+  "test": {
+    "scratch": {
+      "loss": 0.11116465246173697,
+      "char_acc": 0.9889788627624512,
+      "plate_acc": 0.9416901469230652,
+      "pos_acc": [
+        0.9932394623756409,
+        0.9943661689758301,
+        0.987605631351471,
+        0.9929577708244324,
+        0.9884507060050964,
+        0.9895774722099304,
+        0.9850704073905945,
+        0.9805634021759033
+      ],
+      "digit_macro_f1": 0.9894522637554337,
+      "letter_macro_f1": 0.894243794304423,
+      "letter_acc": 0.987605631351471
+    },
+    "pretrained": {
+      "loss": 0.16173885686296813,
+      "char_acc": 0.9698591828346252,
+      "plate_acc": 0.8636619448661804,
+      "pos_acc": [
+        0.9752112627029419,
+        0.9774647951126099,
+        0.9749295711517334,
+        0.9743661880493164,
+        0.9560563564300537,
+        0.9678873419761658,
+        0.9664788842201233,
+        0.9664788842201233
+      ],
+      "digit_macro_f1": 0.9705608100564801,
+      "letter_macro_f1": 0.8921976405215256,
+      "letter_acc": 0.9749295711517334
+    }
+  },
+  "comparison": {
+    "scratch": {
+      "test_plate_acc": 0.9416901469,
+      "test_char_acc": 0.9889788628,
+      "test_letter_acc": 0.9876056314,
+      "digit_macro_f1": 0.9894522638,
+      "letter_macro_f1": 0.8942437943,
+      "test_loss": 0.1111646525,
+      "params_total": 7397244,
+      "params_trainable": 7397244,
+      "size_MB": 28.2891931534,
+      "cuda_ms_per_image": 3.3794038,
+      "cuda_ms_per_batch64": 57.2677208,
+      "cpu_ms_per_image": 30.7518033,
+      "cpu_ms_per_batch64": 2437.21363848
+    },
+    "pretrained": {
+      "test_plate_acc": 0.8636619449,
+      "test_char_acc": 0.9698591828,
+      "test_letter_acc": 0.9749295712,
+      "digit_macro_f1": 0.9705608101,
+      "letter_macro_f1": 0.8921976405,
+      "test_loss": 0.1617388569,
+      "params_total": 4315532,
+      "params_trainable": 4315532,
+      "size_MB": 16.6524915695,
+      "cuda_ms_per_image": 7.31542648,
+      "cuda_ms_per_batch64": 15.11867074,
+      "cpu_ms_per_image": 14.9991945,
+      "cpu_ms_per_batch64": 350.0038592
+    }
+  }
+}

@@ -1,0 +1,8 @@
+2026-09-26 18:12:37  ===== Phase 3 end-to-end evaluation | backend=torch device=mps | 938 test images
+2026-09-26 18:13:13  detector on the test split (Ultralytics val): {'precision': 0.9553, 'recall': 0.9762, 'mAP50': 0.9881, 'mAP50-95': 0.7843, 'fitness': 0.7843}
+2026-09-26 18:14:27  pipeline speed (mean per image, first 5 excluded as warm-up): {'detect_ms': 44.79208469131784, 'recognize_ms': 12.054504710609978, 'total_ms': 66.27285097534785}
+2026-09-26 18:14:30  --- phase1_threshold = 0.618: det_precision 0.9588, det_recall 0.9588, e2e_precision 0.8900, e2e_recall 0.8900, e2e_f1 0.8900, recognition_acc_on_detected 0.9283, cer_on_detected 0.0177, image_acc 0.8561
+2026-09-26 18:14:30  --- best_f1_threshold = 0.650: det_precision 0.9610, det_recall 0.9478, e2e_precision 0.9006, e2e_recall 0.8882, e2e_f1 0.8943, recognition_acc_on_detected 0.9371, cer_on_detected 0.0146, image_acc 0.8571
+2026-09-26 18:14:30  error breakdown: {'read correctly': 969, '1 character wrong': 39, '2+ characters wrong': 26, 'not detected': 57, 'false box': 42}
+2026-09-26 18:14:35  missed plates at this threshold: 57
+2026-09-26 18:14:35  ===== DONE: end-to-end F1 0.8943 (P 0.9006, R 0.8882) at threshold 0.65; 969/1091 test plates read exactly; results in ./reports/phase3

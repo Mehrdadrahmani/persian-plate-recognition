@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:layoutDirection="rtl">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView style="@style/Text.Display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_title" />
+
+        <TextView style="@style/Text.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:text="@string/s_scan" android:textColor="@color/brand_blue" android:fontFamily="@font/vazirmatn_bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card" android:orientation="vertical" android:padding="18dp">
+            <TextView style="@style/Text.Subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s_sensitivity" />
+            <TextView style="@style/Text.Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/s_sensitivity_d" />
+            <com.google.android.material.slider.Slider android:id="@+id/sensitivity" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layoutDirection="ltr" android:stepSize="10" android:valueFrom="0" android:valueTo="100" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" android:orientation="horizontal">
+                <TextView style="@style/Text.Caption" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="left" android:textAlignment="gravity" android:text="@string/low" />
+                <TextView style="@style/Text.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:textAlignment="gravity" android:text="@string/high" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginVertical="12dp" android:background="@color/outline" />
+            <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/autosave" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/s_autosave" android:textAppearance="@style/Text.Subtitle" />
+            <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/vibrate" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/s_vibrate" android:textAppearance="@style/Text.Subtitle" />
+        </LinearLayout>
+
+        <TextView style="@style/Text.Caption" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="@string/s_about" android:textColor="@color/brand_blue" android:fontFamily="@font/vazirmatn_bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card" android:orientation="vertical" android:padding="18dp">
+            <include android:id="@+id/aboutPrivacy" layout="@layout/row_feature" />
+            <include android:id="@+id/aboutModels" layout="@layout/row_feature" />
+            <include android:id="@+id/aboutEngine" layout="@layout/row_feature" />
+        </LinearLayout>
+        <TextView android:id="@+id/version" style="@style/Text.Caption" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:gravity="center" />
+    </LinearLayout>
+</ScrollView>

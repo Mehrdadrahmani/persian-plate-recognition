@@ -1,0 +1,71 @@
+{
+  "backend": "torch",
+  "device": "mps",
+  "test_images": 938,
+  "detector_test_map": {
+    "precision": 0.9553010099188723,
+    "recall": 0.9761686526122824,
+    "mAP50": 0.9880878674437499,
+    "mAP50-95": 0.7843136831611621,
+    "fitness": 0.7843136831611621
+  },
+  "speed_ms_per_image": {
+    "detect_ms": 44.79208469131784,
+    "recognize_ms": 12.054504710609978,
+    "total_ms": 66.27285097534785
+  },
+  "recommended_threshold": 0.65,
+  "phase1_threshold": 0.618,
+  "end_to_end": {
+    "phase1_threshold": {
+      "threshold": 0.618,
+      "gt_plates": 1091,
+      "predicted_plates": 1091,
+      "detected_plates": 1046,
+      "correct_reads": 971,
+      "det_precision": 0.9587534372135655,
+      "det_recall": 0.9587534372135655,
+      "det_f1": 0.9587534372135655,
+      "e2e_precision": 0.8900091659028414,
+      "e2e_recall": 0.8900091659028414,
+      "e2e_f1": 0.8900091659028415,
+      "recognition_acc_on_detected": 0.9282982791586998,
+      "cer_on_detected": 0.01768642447418738,
+      "char_acc_on_detected": 0.9823135755258127,
+      "image_acc": 0.8560767590618337,
+      "pos0_acc": 0.9789674952198852,
+      "pos1_acc": 0.9847036328871893,
+      "pos2_acc": 0.9789674952198852,
+      "pos3_acc": 0.9837476099426387,
+      "pos4_acc": 0.98565965583174,
+      "pos5_acc": 0.9904397705544933,
+      "pos6_acc": 0.9770554493307839,
+      "pos7_acc": 0.9789674952198852
+    },
+    "best_f1_threshold": {
+      "threshold": 0.65,
+      "gt_plates": 1091,
+      "predicted_plates": 1076,
+      "detected_plates": 1034,
+      "correct_reads": 969,
+      "det_precision": 0.9609665427509294,
+      "det_recall": 0.9477543538038496,
+      "det_f1": 0.9543147208121827,
+      "e2e_precision": 0.9005576208178439,
+      "e2e_recall": 0.8881759853345554,
+      "e2e_f1": 0.8943239501615136,
+      "recognition_acc_on_detected": 0.937137330754352,
+      "cer_on_detected": 0.014627659574468085,
+      "char_acc_on_detected": 0.9853723404255319,
+      "image_acc": 0.8571428571428571,
+      "pos0_acc": 0.9806576402321083,
+      "pos1_acc": 0.9854932301740812,
+      "pos2_acc": 0.9825918762088974,
+      "pos3_acc": 0.9874274661508704,
+      "pos4_acc": 0.9874274661508704,
+      "pos5_acc": 0.9922630560928434,
+      "pos6_acc": 0.9825918762088974,
+      "pos7_acc": 0.9845261121856866
+    }
+  }
+}

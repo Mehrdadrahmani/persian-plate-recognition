@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0C1222</color>
+    <color name="surface">#161E33</color>
+    <color name="surface_variant">#1F2942</color>
+    <color name="on_surface">#EEF2FB</color>
+    <color name="on_surface_muted">#A3AEC6</color>
+    <color name="outline">#2C3856</color>
+    <color name="brand_blue">#7DA2FF</color>
+    <color name="brand_container">#23345F</color>
+    <color name="brand_on_container">#DCE6FF</color>
+</resources>

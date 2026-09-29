@@ -1,0 +1,28 @@
+# datasets (download with scripts/00_download_data.py) and generated files
+data/
+work/
+reports/*_smoke/
+release/
+*.cache
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+
+# Android / Gradle
+android/.gradle/
+android/build/
+android/*/build/
+android/local.properties
+android/.idea/
+*.iml
+.kotlin/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+samples/
+tests/sample_car.jpg
+.pytest_cache/
+.DS_Store
+*.sqlite

@@ -1,0 +1,26 @@
+[project]
+name = "parkyar"
+dynamic = ["version"]
+description = "Smart parking management with Iranian licence-plate recognition (Persian desktop app)"
+requires-python = ">=3.10"
+dependencies = ["PySide6-Essentials>=6.8", "onnxruntime>=1.18", "opencv-python-headless>=4.9", "numpy>=1.26", "pillow>=10.0"]
+
+[project.gui-scripts]
+parkyar = "parkyar.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["parkyar"]
+
+[tool.setuptools.dynamic]
+version = { attr = "parkyar.__version__" }
+
+[tool.setuptools.package-data]
+parkyar = ["assets/fonts/*", "assets/models/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

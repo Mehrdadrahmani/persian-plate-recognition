@@ -1,0 +1,71 @@
+# All settings in one place. Paths are relative to the repository root.
+# Values match the Kaggle run that produced the models in models/ (2 x T4, 2026-09-26).
+
+seed: 42
+
+paths:
+  data_dir: data          # contains LPD/ (images, labels, plate_labels.csv) and LPR/ (detections, valid_samples.csv)
+  work_dir: work          # generated: YOLO layout, training runs (git-ignored)
+  models_dir: models      # trained model bundle used for inference / evaluation
+  reports_dir: reports    # figures, CSV tables and logs
+
+lpd:                      # Phase 1: licence-plate DETECTION (Ultralytics YOLO26)
+  model: yolo26n.pt       # try yolo26s.pt if mAP50-95 plateaus
+  split: {train: 0.70, val: 0.15, test: 0.15}
+  train:
+    epochs: 40
+    imgsz: 960            # plates are small (median ~42 px high at native resolution)
+    batch: 16             # per GPU (multiplied by the number of GPUs for DDP)
+    patience: 15
+    optimizer: MuSGD      # YOLO26 default; "auto" would switch to AdamW below 10k iterations
+    lr0: 0.01
+    cos_lr: true
+    save_period: 10
+    close_mosaic: 10
+    mosaic: 1.0
+    fliplr: 0.5
+    degrees: 0.0
+    translate: 0.1
+    scale: 0.5
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    plots: true
+
+lpr:                      # Phase 2: licence-plate RECOGNITION (pure PyTorch)
+  split: {holdout: 0.20}  # of plate groups not forced into test; halved into val / test
+  batch_size: 128
+  label_smoothing: 0.05
+  grad_clip: 5.0
+  pct_start: 0.15         # OneCycle warm-up fraction
+  letter_weight_power: 0.5
+  max_letter_weight: 5.0
+  crop_jitter: 0.08       # random crop/pad per side, mimics loose/tight YOLO boxes
+  log_every: 10
+  scratch: {epochs: 40, lr: 0.002, weight_decay: 0.05, patience: 8}
+  pretrained:
+    backbone: mobilenet_v3_large
+    stage1_epochs: 3
+    stage1_lr: 0.001
+    epochs: 25
+    head_lr: 0.001
+    backbone_lr: 0.0003
+    weight_decay: 0.01
+    patience: 6
+  timing: {warmup: 10, iters: 50, batch: 64}
+
+pipeline:                 # Phase 3: end-to-end
+  crop_padding: 0.05
+  iou_match: 0.5          # detection counts as correct at IoU >= 0.5
+
+smoke_overrides:          # --smoke: a few dozen images, 1 epoch (checks that everything runs)
+  lpd:
+    smoke_n: {train: 48, val: 16, test: 40}
+    train: {epochs: 1, imgsz: 320, batch: 8, save_period: 1, close_mosaic: 0}
+  lpr:
+    smoke_n: {train: 256, val: 64, test: 64}
+    batch_size: 32
+    log_every: 1
+    scratch: {epochs: 1}
+    pretrained: {stage1_epochs: 1, epochs: 1}
+    timing: {warmup: 2, iters: 3, batch: 16}

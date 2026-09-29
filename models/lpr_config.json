@@ -1,0 +1,226 @@
+{
+  "best_model": "scratch",
+  "arch": "scratch",
+  "backbone": null,
+  "torchscript": "lpr_best.ts",
+  "state_dict": "lpr_scratch_best.pt",
+  "input_size_hw": [
+    64,
+    256
+  ],
+  "resize": "letterbox (keep aspect ratio, centre, pad with gray)",
+  "pad_value": 114,
+  "color_mode": "RGB",
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "digit_vocab": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "letter_vocab": [
+    "الف",
+    "آ",
+    "ب",
+    "پ",
+    "ت",
+    "ث",
+    "ج",
+    "د",
+    "ز",
+    "ژ",
+    "س",
+    "ش",
+    "ص",
+    "ط",
+    "ع",
+    "ق",
+    "ل",
+    "م",
+    "ن",
+    "و",
+    "ه",
+    "ی"
+  ],
+  "letter_vocab_latin": [
+    "Alef",
+    "A",
+    "B",
+    "P",
+    "T",
+    "Se",
+    "J",
+    "D",
+    "Z",
+    "Zh",
+    "S",
+    "Sh",
+    "Sad",
+    "Ta",
+    "Ein",
+    "Gh",
+    "L",
+    "M",
+    "N",
+    "V",
+    "H",
+    "Y"
+  ],
+  "letter_index": [
+    {
+      "index": 0,
+      "char": "الف",
+      "latin": "Alef"
+    },
+    {
+      "index": 1,
+      "char": "آ",
+      "latin": "A"
+    },
+    {
+      "index": 2,
+      "char": "ب",
+      "latin": "B"
+    },
+    {
+      "index": 3,
+      "char": "پ",
+      "latin": "P"
+    },
+    {
+      "index": 4,
+      "char": "ت",
+      "latin": "T"
+    },
+    {
+      "index": 5,
+      "char": "ث",
+      "latin": "Se"
+    },
+    {
+      "index": 6,
+      "char": "ج",
+      "latin": "J"
+    },
+    {
+      "index": 7,
+      "char": "د",
+      "latin": "D"
+    },
+    {
+      "index": 8,
+      "char": "ز",
+      "latin": "Z"
+    },
+    {
+      "index": 9,
+      "char": "ژ",
+      "latin": "Zh"
+    },
+    {
+      "index": 10,
+      "char": "س",
+      "latin": "S"
+    },
+    {
+      "index": 11,
+      "char": "ش",
+      "latin": "Sh"
+    },
+    {
+      "index": 12,
+      "char": "ص",
+      "latin": "Sad"
+    },
+    {
+      "index": 13,
+      "char": "ط",
+      "latin": "Ta"
+    },
+    {
+      "index": 14,
+      "char": "ع",
+      "latin": "Ein"
+    },
+    {
+      "index": 15,
+      "char": "ق",
+      "latin": "Gh"
+    },
+    {
+      "index": 16,
+      "char": "ل",
+      "latin": "L"
+    },
+    {
+      "index": 17,
+      "char": "م",
+      "latin": "M"
+    },
+    {
+      "index": 18,
+      "char": "ن",
+      "latin": "N"
+    },
+    {
+      "index": 19,
+      "char": "و",
+      "latin": "V"
+    },
+    {
+      "index": 20,
+      "char": "ه",
+      "latin": "H"
+    },
+    {
+      "index": 21,
+      "char": "ی",
+      "latin": "Y"
+    }
+  ],
+  "plate_len": 8,
+  "position_layout": [
+    "digit",
+    "digit",
+    "letter",
+    "digit",
+    "digit",
+    "digit",
+    "digit",
+    "digit"
+  ],
+  "letter_position": 2,
+  "digit_positions": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "model_outputs": "tuple(digit_logits [B,7,10] for label positions 0,1,3,4,5,6,7; letter_logits [B,n_letters])",
+  "output_format": "DD L DDD DD without separators, e.g. '12ب34567' (last two digits = region code; alef is written 'الف')",
+  "label_normalization": "lpr_models.normalize_label (removes ZWJ/ZWNJ/spaces, Persian digits -> ASCII, Arabic yeh/kaf -> Persian)",
+  "crop_padding": 0.05,
+  "yolo_conf_threshold": 0.618,
+  "yolo_imgsz": 960,
+  "smoke_test": false
+}

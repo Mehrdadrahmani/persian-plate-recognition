@@ -1,0 +1,17 @@
+{
+  "detector": "int8h_640",
+  "recognizer": "int8",
+  "imgsz": 640,
+  "conf": 0.55,
+  "val_e2e_f1": 0.9227099236641221,
+  "test_e2e_f1": 0.8996247654784242,
+  "test_correct_reads": 959,
+  "test_gt_plates": 1091,
+  "size_MB": 10.926528000000001,
+  "ms_per_image_mac_cpu": 149.0627581350216,
+  "baseline": {
+    "test_e2e_f1": 0.8949343339587242,
+    "size_MB": 39.590321,
+    "ms_per_image_mac_cpu": 394.3539522647248
+  }
+}
